@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bgF)"/>
+  
+  <!-- Left Side: Hex View / Evidence File Analysis -->
+  <g transform="translate(60, 45)">
+    <rect width="270" height="240" rx="10" fill="#101827" stroke="#243044" stroke-width="1.5"/>
+    <rect width="270" height="28" rx="10" fill="#1B2739"/>
+    <text x="14" y="18" fill="#8AB4F8" font-family="monospace" font-size="10">hex_inspector: evidence_01.raw</text>
+    
+    <g transform="translate(14, 45)" font-family="monospace" font-size="9" fill="#B7C0CE">
+      <text x="0" y="15"><tspan fill="#8A94A6">00000000:</tspan> 89 50 4e 47  0d 0a 1a 0a  .PNG....</text>
+      <text x="0" y="35"><tspan fill="#8A94A6">00000010:</tspan> 00 00 00 0d  49 48 44 52  ....IHDR</text>
+      <text x="0" y="55"><tspan fill="#8A94A6">00000020:</tspan> 00 00 02 80  00 00 01 e0  ........</text>
+      <text x="0" y="75"><tspan fill="#8A94A6">00000030:</tspan> 08 06 00 00  00 35 f0 88  .....5..</text>
+      <text x="0" y="95" fill="#8AB4F8"><tspan fill="#8A94A6">00000040:</tspan> 50 4b 03 04  [Hidden Zip Header Discovered]</text>
+      <text x="0" y="115"><tspan fill="#8A94A6">00000050:</tspan> 14 00 00 00  08 00 75 8a  ......u.</text>
+      
+      <!-- Hash Match verification box -->
+      <rect x="0" y="130" width="240" height="40" rx="6" fill="#1B2739" stroke="#8AB4F8" stroke-width="1"/>
+      <text x="8" y="146" fill="#8AB4F8" font-size="8.5">SHA-256 Checksum Verified:</text>
+      <text x="8" y="160" fill="#D3DFFA" font-size="8">e3b0c44298fc1c149afbf4c8996fb92427ae4...</text>
+    </g>
+  </g>
+  
+  <!-- Right Side: Chain of Custody & PCAP Investigation Card -->
+  <g transform="translate(350, 45)">
+    <rect width="190" height="240" rx="10" fill="#101827" stroke="#2F63C9" stroke-width="1.5"/>
+    <rect width="190" height="28" rx="10" fill="#2F63C9"/>
+    <text x="14" y="18" fill="#D3DFFA" font-family="monospace" font-size="10">CHAIN OF CUSTODY</text>
+    
+    <g transform="translate(14, 45)">
+      <text x="0" y="15" fill="#B9CDF8" font-family="sans-serif" font-size="11" font-weight="600">Case # DF-2024-08</text>
+      
+      <!-- Evidence timeline nodes -->
+      <circle cx="6" cy="40" r="4" fill="#8AB4F8"/>
+      <line x1="6" y1="44" x2="6" y2="70" stroke="#4D8DF6" stroke-width="1.5"/>
+      <text x="18" y="44" fill="#B7C0CE" font-family="sans-serif" font-size="9.5">Bitstream Image (dd)</text>
+      
+      <circle cx="6" cy="74" r="4" fill="#8AB4F8"/>
+      <line x1="6" y1="78" x2="6" y2="105" stroke="#4D8DF6" stroke-width="1.5"/>
+      <text x="18" y="78" fill="#B7C0CE" font-family="sans-serif" font-size="9.5">PCAP Stream Rebuild</text>
+      
+      <circle cx="6" cy="109" r="4" fill="#8AB4F8"/>
+      <text x="18" y="113" fill="#B7C0CE" font-family="sans-serif" font-size="9.5">Artifact Extraction</text>
+      
+      <!-- Evidence Integrity Tag -->
+      <rect x="0" y="140" width="162" height="34" rx="6" fill="#1B2739" stroke="#8AB4F8" stroke-width="1"/>
+      <text x="10" y="156" fill="#B9CDF8" font-family="monospace" font-size="9" font-weight="bold">INTEGRITY: INTACT</text>
+      <text x="10" y="167" fill="#8AB4F8" font-family="monospace" font-size="8">Write-blocker confirmed</text>
+    </g>
+  </g>
+</svg>

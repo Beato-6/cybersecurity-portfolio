@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgN" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="radarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D8DF6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4D8DF6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bgN)"/>
+  
+  <!-- Radar circles on left -->
+  <g transform="translate(160, 165)">
+    <circle r="120" fill="none" stroke="#2F63C9" stroke-width="1" opacity="0.4"/>
+    <circle r="85" fill="none" stroke="#2F63C9" stroke-width="1" opacity="0.6"/>
+    <circle r="50" fill="none" stroke="#4D8DF6" stroke-width="1.2" opacity="0.8"/>
+    <circle r="15" fill="#4D8DF6" opacity="0.3"/>
+    <!-- Crosshairs -->
+    <line x1="-130" y1="0" x2="130" y2="0" stroke="#2F63C9" stroke-width="1" opacity="0.3"/>
+    <line x1="0" y1="-130" x2="0" y2="130" stroke="#2F63C9" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Discovered host blips -->
+    <circle cx="45" cy="-55" r="4.5" fill="#8AB4F8"/>
+    <circle cx="45" cy="-55" r="9" fill="none" stroke="#8AB4F8" opacity="0.6"/>
+    <text x="56" y="-50" fill="#8AB4F8" font-family="monospace" font-size="9">192.168.1.105</text>
+    
+    <circle cx="-60" cy="40" r="4" fill="#6BA0F8"/>
+    <text x="-120" y="55" fill="#6BA0F8" font-family="monospace" font-size="9">192.168.1.1 [GW]</text>
+  </g>
+  
+  <!-- Nmap / Wireshark terminal on right -->
+  <g transform="translate(310, 50)">
+    <rect width="250" height="230" rx="10" fill="#0B1120" stroke="#2F63C9" stroke-width="1.5"/>
+    <rect width="250" height="28" rx="10" fill="#1B2739"/>
+    <text x="16" y="18" fill="#8AB4F8" font-family="monospace" font-size="10">nmap -sV -sC -T4 10.10.10.0/24</text>
+    
+    <g transform="translate(14, 45)">
+      <text x="0" y="15" fill="#8A94A6" font-family="monospace" font-size="9.5">Nmap scan report for host (up)</text>
+      <text x="0" y="35" fill="#4D8DF6" font-family="monospace" font-size="9.5">PORT     STATE  SERVICE VERSION</text>
+      <text x="0" y="55" fill="#F5F7FA" font-family="monospace" font-size="9.5">22/tcp   open   ssh     OpenSSH 8.9</text>
+      <text x="0" y="75" fill="#F5F7FA" font-family="monospace" font-size="9.5">80/tcp   open   http    nginx 1.18.0</text>
+      <text x="0" y="95" fill="#F5F7FA" font-family="monospace" font-size="9.5">443/tcp  open   ssl/http</text>
+      <text x="0" y="115" fill="#F5F7FA" font-family="monospace" font-size="9.5">3306/tcp filtered mysql</text>
+      
+      <rect x="0" y="132" width="220" height="32" rx="5" fill="#1B2739" stroke="#6BA0F8" stroke-width="1"/>
+      <text x="8" y="148" fill="#8AB4F8" font-family="monospace" font-size="9">Wireshark: TCP 3-Way Handshake</text>
+      <text x="8" y="158" fill="#8AB4F8" font-family="monospace" font-size="8.5">SYN &gt; SYN-ACK &gt; ACK verified</text>
+    </g>
+  </g>
+</svg>

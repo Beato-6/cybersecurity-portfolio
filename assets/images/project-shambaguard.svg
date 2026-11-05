@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1B2739" stroke-width="0.8" opacity="0.7"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="340" fill="#0B1120"/>
+  <rect width="600" height="340" fill="url(#gridS)"/>
+
+  <!-- Framing arcs: documentation scope -->
+  <circle cx="300" cy="170" r="150" fill="none" stroke="#2F63C9" stroke-width="1" opacity="0.35" stroke-dasharray="5 5"/>
+  <circle cx="300" cy="170" r="118" fill="none" stroke="#2F63C9" stroke-width="1" opacity="0.5"/>
+
+  <!-- Policy document -->
+  <g transform="translate(150, 34)">
+    <rect width="300" height="272" rx="12" fill="#101827" stroke="#243044" stroke-width="1.5"/>
+    <path d="M0 12a12 12 0 0 1 12-12h276a12 12 0 0 1 12 12v26H0z" fill="#16202F"/>
+    <circle cx="20" cy="19" r="3.5" fill="#2F63C9"/>
+    <text x="34" y="23" fill="#B9CDF8" font-family="monospace" font-size="11" font-weight="bold">SECURITY_POLICIES.md</text>
+    <line x1="0" y1="38" x2="300" y2="38" stroke="#243044" stroke-width="1"/>
+
+    <g font-family="sans-serif" font-size="11" fill="#B7C0CE">
+      <g transform="translate(20, 62)">
+        <circle cx="6" cy="4" r="6" fill="#1B2739"/>
+        <path d="M3 4 L5.5 6.8 L10 1.5" stroke="#4D8DF6" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="22" y="8">STRIDE Threat Modeling</text>
+      </g>
+      <g transform="translate(20, 100)">
+        <circle cx="6" cy="4" r="6" fill="#1B2739"/>
+        <path d="M3 4 L5.5 6.8 L10 1.5" stroke="#4D8DF6" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="22" y="8">Risk Assessment Matrix</text>
+      </g>
+      <g transform="translate(20, 138)">
+        <circle cx="6" cy="4" r="6" fill="#1B2739"/>
+        <path d="M3 4 L5.5 6.8 L10 1.5" stroke="#4D8DF6" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="22" y="8">Secure SDLC Guidelines</text>
+      </g>
+      <g transform="translate(20, 176)">
+        <circle cx="6" cy="4" r="6" fill="#1B2739"/>
+        <path d="M3 4 L5.5 6.8 L10 1.5" stroke="#4D8DF6" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="22" y="8">Data Privacy &amp; Access Controls</text>
+      </g>
+    </g>
+
+    <line x1="20" y1="206" x2="280" y2="206" stroke="#243044" stroke-width="1"/>
+    <text x="20" y="228" fill="#8A94A6" font-family="monospace" font-size="10">ROLE</text>
+    <text x="20" y="248" fill="#B9CDF8" font-family="monospace" font-size="10" font-weight="bold">Security documentation</text>
+  </g>
+</svg>
